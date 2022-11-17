@@ -1,0 +1,24 @@
+scopes: []
+inputs:
+
+  plugin_rss:
+    description: |
+      Enable rss plugin
+    type: boolean
+    default: no
+
+  plugin_rss_source:
+    description: |
+      RSS feed source
+    type: string
+    default: ""
+    example: https://news.ycombinator.com/rss
+
+  plugin_rss_limit:
+    description: |
+      Display limit
+    type: number
+    default: 4
+    min: 0
+    max: 30
+    zero: disable
